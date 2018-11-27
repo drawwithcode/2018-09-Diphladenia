@@ -4,7 +4,7 @@ var canvas;
 var mappa = new Mappa ('MapboxGL', 'pk.eyJ1IjoiZGlwaGxhIiwiYSI6ImNqb3F1dTZxMzA5MnozcnJuZXRrNDB4dGQifQ.ie8cDKN7f0RxgGIQ45-c8g')
 
 //international date line
-var changedaylineLon = 180;
+var changedatelineLon = 180;
 
 var options = {
   lat: 0,
@@ -119,7 +119,7 @@ function draw() {
   }
 
   //calc distance date line
-  var distance = calcGeoDistance(myLoc.latitude, myLoc.longitude, changedaylineLon, changedaylineLon, "km");
+  var distance = calcGeoDistance(myLoc.latitude, myLoc.longitude, changedatelineLon, changedatelineLon, "km");
   textSize(28);
   textAlign(CENTER);
   text('and ' + distance + ' Km from the international date line', width/2, 11*height/12);
